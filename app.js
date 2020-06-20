@@ -2,7 +2,7 @@ const express = require('express')
 const fetch = require('node-fetch')
 const bodyParser = require('body-parser')
 
-const urlTemplate = 'https://api.themoviedb.org/3/discover/movie?api_key=cdae76ec38262d13d1dc04f145064795&language=en-US&sort_by=popularity.desc&include_adult=false&release_date.gte=2020-01-01&release_date.lte=&vote_average.gte=&with_genres=&page=1'
+const urlTemplate = 'https://api.themoviedb.org/3/discover/movie?api_key=<< Your API Key Here >>&language=en-US&sort_by=popularity.desc&include_adult=false&release_date.gte=2020-01-01&release_date.lte=&vote_average.gte=&with_genres=&page=1'
 
 const app = express()
 app.use(express.static('public'))
